@@ -3146,7 +3146,7 @@ void BE_IMPL_AddScene(const char* sceneName, const char* file, int line) {
     BE_SceneVectorPush(&g_engine->scenes, BE_SceneInit(sceneName));
     BE_Scene* scene = BE_FindScenePtr(&g_engine->scenes, sceneName);
     
-    BE_CameraVectorPush(&scene->cameras, BE_CameraInit("camera1", 1, 1, 45, 0.1f, 100, BE_vec3(-1.93f, 0.73f, -1.75f), BE_vec3(0.67f, -0.12f, 0.73f)));
+    BE_CameraVectorPush(&scene->cameras, BE_CameraInit("camera1", 1, 1, 45, 0.1f, 100, BE_vec3(0, 1, 3), BE_vec3(0, 1, 0)));
     scene->activeCamera = BE_FindCameraPtr(&scene->cameras, "camera1");
     
     BE_IMPL_BindScene(sceneName, file, line);

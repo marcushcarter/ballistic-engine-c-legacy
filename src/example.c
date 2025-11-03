@@ -31,7 +31,7 @@ int main() {
     while(BE_WindowIsOpen()) {
 
         BE_BeginFrame();
-        // BE_CameraInputs(g_engine->activeScene->activeCamera, g_engine->window, g_engine->timer.dt);
+        BE_CameraInputs(g_engine->activeScene->activeCamera, g_engine->window, g_engine->timer.dt);
 
         if (g_engine->timer.frameCountFPS == 1) printf("%f FPS %f MS\n", g_engine->timer.fps, g_engine->timer.ms);
 
